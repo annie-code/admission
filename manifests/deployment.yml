@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aksschoolcluster-e8a4"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aksschoolcluster-e8a4"
+  template:
+    metadata:
+      labels:
+        app: "aksschoolcluster-e8a4"
+    spec:
+      containers:
+        - name: "aksschoolcluster-e8a4"
+          image: "aksazurecontainer.azurecr.io/aksschoolcluster"
+          ports:
+          - containerPort: 80
