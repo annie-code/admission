@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:StudentAdmissionServiceContext"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql2": {
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:schoolcontext",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
